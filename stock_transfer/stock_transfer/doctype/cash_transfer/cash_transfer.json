@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:CT-{YYYY}-{MM}-{###}",
+ "creation": "2024-07-05 02:33:26.346081",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "source_company",
+  "source_debit_account",
+  "column_break_bhgq",
+  "amount",
+  "source_credit_account",
+  "target_section",
+  "target_company",
+  "target_debit_account",
+  "column_break_folt",
+  "status",
+  "target_credit_account",
+  "references_section",
+  "source_journal_entry",
+  "column_break_ayqp",
+  "target_journal_entry",
+  "section_break_b39n",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_b39n",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cash Transfer",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "source_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nComplete\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "target_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "references_section",
+   "fieldtype": "Section Break",
+   "label": "References"
+  },
+  {
+   "fieldname": "source_journal_entry",
+   "fieldtype": "Link",
+   "label": "Source Journal Entry",
+   "options": "Journal Entry"
+  },
+  {
+   "fieldname": "column_break_ayqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_journal_entry",
+   "fieldtype": "Link",
+   "label": "Target Journal Entry",
+   "options": "Journal Entry"
+  },
+  {
+   "fieldname": "source_debit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Debit Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "target_section",
+   "fieldtype": "Section Break",
+   "label": "Target"
+  },
+  {
+   "fieldname": "source_credit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Credit Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bhgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_debit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Debit Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_folt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_credit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Target Credit Account",
+   "options": "Account",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-05 15:06:17.660368",
+ "modified_by": "Administrator",
+ "module": "Stock Transfer",
+ "name": "Cash Transfer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
